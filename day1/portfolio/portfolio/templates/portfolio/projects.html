@@ -1,0 +1,28 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
+
+<h2 class="section-title">My Projects</h2>
+
+<div class="projects-container">
+
+    <div class="project-card">
+        <h3>Weather App</h3>
+        <p>A real-time weather forecast app using Django and OpenWeatherMap API.</p>
+        <a href="https://github.com/yourusername/weather-app" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This personal website built using Django and custom CSS to showcase my work.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Task Manager</h3>
+        <p>A to-do list web app with user authentication and status tracking using Django.</p>
+        <a href="https://github.com/yourusername/task-manager" target="_blank" class="btn">View Project</a>
+    </div>
+
+</div>
+
+{% endblock %}

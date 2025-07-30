@@ -1,0 +1,26 @@
+{% extends 'card/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card profile-card shadow-lg">
+        <img src="{% static image %}" class="card-img-top profile-img" alt="{{ name }}">
+        <div class="card-body text-center">
+            <h2 class="card-title">{{ name }}</h2>
+            <h5 class="card-subtitle text-muted mb-3">{{ title }}</h5>
+            <p class="card-text">{{ bio }}</p>
+
+            <ul class="list-unstyled contact-info">
+                <li><strong>Email:</strong> {{ email }}</li>
+                <li><strong>Phone:</strong> {{ phone }}</li>
+                <li><strong>Location:</strong> {{ location }}</li>
+            </ul>
+
+            <div class="social-links">
+                <a href="{{ linkedin }}" target="_blank" class="btn btn-outline-primary btn-sm me-2">LinkedIn</a>
+                <a href="{{ github }}" target="_blank" class="btn btn-outline-dark btn-sm">GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

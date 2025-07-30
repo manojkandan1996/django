@@ -1,0 +1,18 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="contact-section animated fade-in">
+    <h2>Contact Me</h2>
+    <p>Feel free to drop a message. I'll get back to you as soon as possible!</p>
+
+    <form method="post" action="#" class="contact-form">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+{% endblock %}

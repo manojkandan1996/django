@@ -1,0 +1,21 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="hero animated fade-in-up">
+    <div class="hero-text">
+        <h1>Hello, I'm <span class="highlight">VANISHREE</span></h1>
+        <p>I’m a <strong>Full-Stack Developer</strong> building sleek, fast, and scalable web apps.</p>
+        <a href="/projects/" class="btn">View My Projects</a>
+    </div>
+    <div class="hero-image">
+        <img src="{% static 'portfolio/images/profile.jpg' %}" alt="Profile Picture">
+    </div>
+</section>
+
+<section class="intro-section animated fade-in">
+    <h2>What I Do</h2>
+    <p>I develop clean, responsive, and high-performance websites using Django, Python, and modern frontend technologies.</p>
+</section>
+
+{% endblock %}
