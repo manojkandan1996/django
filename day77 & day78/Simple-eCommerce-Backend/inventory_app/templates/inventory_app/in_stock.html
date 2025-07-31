@@ -1,0 +1,8 @@
+<h2>In Stock Products</h2>
+<ul>
+  {% for product in products %}
+    <li>{{ product.name }} - ₹{{ product.price }} (Qty: {{ product.quantity }})</li>
+  {% empty %}
+    <li>No products available.</li>
+  {% endfor %}
+</ul>
